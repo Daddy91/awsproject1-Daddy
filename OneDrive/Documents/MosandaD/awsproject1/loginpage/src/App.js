@@ -7,10 +7,11 @@ const LoginPage = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('YOUR_AWS_LAMBDA_ENDPOINT', {
+      const response = await fetch('https://l7dogc2yhe.execute-api.us-east-1.amazonaws.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
         },
         body: JSON.stringify({ username, password }),
       });
@@ -22,7 +23,7 @@ const LoginPage = () => {
       }
     } catch (error) {
       console.error('Error logging in:', error);
-      setMessage('Error logging in. Please try again.');
+      setMessage('Error logging in. Please try again.', error);
     }
   };
 
