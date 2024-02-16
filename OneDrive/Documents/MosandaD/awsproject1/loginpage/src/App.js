@@ -7,11 +7,10 @@ const LoginPage = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('https://l7dogc2yhe.execute-api.us-east-1.amazonaws.com/login', {
+      const response = await fetch('https://a2wtznonwj.execute-api.us-east-1.amazonaws.com/test/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
         },
         body: JSON.stringify({ username, password }),
       });
