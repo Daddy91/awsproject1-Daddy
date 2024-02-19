@@ -7,7 +7,7 @@ const LoginPage = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('https://a2wtznonwj.execute-api.us-east-1.amazonaws.com/test/login', {
+      const response = await fetch('https://sfu6x3sy1c.execute-api.us-east-1.amazonaws.com/test/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
