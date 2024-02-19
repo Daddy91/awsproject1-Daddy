@@ -29,6 +29,7 @@ const LoginPage = () => {
   return (
     <div>
       <h2>Welcome to my login</h2>
+      <h1>This came from the pipeline yeah!</h1>
       <div>
         <input
           type="text"
